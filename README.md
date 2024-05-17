@@ -28,9 +28,9 @@ Vamos a usar con Docker Ansible para asi automatizar varias tareas.
    ![image](https://github.com/fmartingv/Ansible/assets/120713266/a804f2bf-0db2-41ef-a4e5-a80b0d2201ac)
 
   2. Primero hacemos la imagen del docker con el build:
-  3. 
+     
    ![image](https://github.com/fmartingv/Ansible/assets/120713266/5adcbb3c-ab24-4c8a-abd6-a15a6bf43409)
 
-  4. Lo ejecutamos con docker run y vemos los resultados:
-  5. 
+  3. Lo ejecutamos con docker run y vemos los resultados:
+     
    ![image](https://github.com/fmartingv/Ansible/assets/120713266/57fc9536-1aab-48db-a57d-d97953f1e030)
