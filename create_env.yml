@@ -1,0 +1,5 @@
+- name: Crear entorno virtual en Python
+  hosts: localhost
+  tasks:
+    - name: Crear entorno virtual
+      command: python3.8 -m venv myenv

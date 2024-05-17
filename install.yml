@@ -1,0 +1,7 @@
+- name: Instalar nano
+  hosts: localhost
+  tasks:
+    - name: Instalar nano
+      apt:
+        name: nano
+        state: present
