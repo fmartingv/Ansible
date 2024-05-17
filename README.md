@@ -1,21 +1,26 @@
 # Ansible
-Descripción del proyecto:
-create_env.yml:
-Playbook de Ansible para crear y configurar un entorno específico. Es útil para preparar el ambiente necesario para la ejecución de otros scripts y tareas.
 
-create_env.yml:
-Playbook de Ansible para crear un entorno virtual en Python.
+Vamos a usar con Docker Ansible para asi automatizar varias tareas.
 
-Dockerfile:
-Archivo Docker que define los pasos para construir una imagen de Docker con Ansible y nano, y para ejecutar los playbooks de Ansible durante la construcción del contenedor.
+  1.Crearemos una carpeta donde estaran los diferentes archivos, entre ellos estarán: 
+  
+  -create_env.yml: Playbook de Ansible para crear un entorno.
+  ![image](https://github.com/fmartingv/Ansible/assets/120713266/e49d0f27-f81a-41dc-ab42-7842f5d58776)
 
-execute_script.yml:
-Playbook de Ansible para ejecutar un script dentro del entorno virtual de Python y redirigir su salida a un archivo de log.
-Playbook de Ansible que ejecuta un script dentro del entorno previamente configurado. Es útil para automatizar la ejecución de tareas específicas.
+  -execute_script.yml: Este Playbook ejecuta el script de prueba en el entorno y vemos la salida en un log.
+  ![image](https://github.com/fmartingv/Ansible/assets/120713266/146d299c-1229-495f-9ce6-db476907341d)
 
-install.yml:
-Playbook de Ansible para instalar nano en el sistema.
+  -install.yml: Este playbook de Ansible instala el editor de texto nano.
+  ![image](https://github.com/fmartingv/Ansible/assets/120713266/d7f6bcd2-8833-4570-a8be-9f705f63b463)
 
-prueba.py:
-Script de Python utilizado para pruebas. Este script simplemente imprime "hola".
+  -Dockerfile: Asi construimos la imagen de docker isnatalando Ansible y Nano copiando los archivos del proyecto al contenedor y ejecutando los playbooks de Ansible.
+   ![image](https://github.com/fmartingv/Ansible/assets/120713266/323bd107-6705-4e82-9b5d-ed51c12f6cf5)
 
+  -prueba.py: Pequeño codigo de Python que hace un print para comprobar si va.
+   ![image](https://github.com/fmartingv/Ansible/assets/120713266/a83c608b-3658-4c17-ae93-68bc8ad7096a)
+
+  2. Primero hacemos la imagen del docker con el build:
+   ![image](https://github.com/fmartingv/Ansible/assets/120713266/5adcbb3c-ab24-4c8a-abd6-a15a6bf43409)
+
+  3. Lo ejecutamos con docker run y vemos los resultados:
+   ![image](https://github.com/fmartingv/Ansible/assets/120713266/57fc9536-1aab-48db-a57d-d97953f1e030)
