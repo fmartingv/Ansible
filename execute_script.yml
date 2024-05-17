@@ -1,5 +1,5 @@
 - name: Ejecutar script 
   hosts: localhost
   tasks:
-    - name: Ejecutar script que imprime "Hola"
+    - name: Ejecutar script de prueba
       command: /bin/bash -c "source myenv/bin/activate && python /ansible/prueba.py > /ansible/prueba.log"
